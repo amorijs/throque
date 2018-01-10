@@ -31,7 +31,7 @@ for (let i = 0; i < 10000; i += 1) {
 }
 ```
 
-Notice how we are no longer using callbacks when using a throqued function. This is because throque will promisify your ``functiontoThrottle`` if you set the ``returnsPromise`` argument to false. There are some important things to note when setting this flag to false however.
+Notice how we are no longer using callbacks when using a throqued function. This is because throque will promisify your ``functiontoThrottle`` if you set the ``returnsPromise`` argument to false. There are some important things to note when setting this flag to false however (see API below.)
 
 ## API
 throque currently exports a single function which is relatively simple to use.
