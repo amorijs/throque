@@ -58,6 +58,10 @@ throque currently exports a single function which is relatively simple to use.
   
  ## Plans for the future
  
+ ### Port to typescript
+ 
+ throque will be ported to typescript in the near future
+ 
  ### Tests
  
  Currently throque is not tested, but tests will be added soon, and future additions to the library will be developed test-first.
