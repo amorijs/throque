@@ -5,5 +5,8 @@
   "main": "lib/throque.js",
   "repository": "https://github.com/amorijs/throque.git",
   "author": "chris <chris.amori93@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "es6-promisify": "^5.0.0"
+  }
 }
