@@ -1,6 +1,6 @@
 {
   "name": "throque",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple async function decorator which limits how many invocations of said function can be active at once.",
   "main": "lib/throque.js",
   "repository": "https://github.com/amorijs/throque.git",
