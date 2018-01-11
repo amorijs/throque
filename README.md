@@ -5,6 +5,15 @@ Pronounced: throck
 
 Etymology: Throttle + Queue = throque
 
+## Installation and usage
+
+``yarn install`` or ``npm install``
+
+```
+const throque = require('./throque');
+const writeFileThroqued = throque(fs.writeFile, 200, false);
+```
+
 ## History
 throque was born from this pesky Node.js error: ``Error: EMFILE: too many open files``. This error get's thrown when Node's file-system module has too many open files at once (obviously.) throque alleviates this problem by creating a decorated version of your function which Queues excessive calls until the appropriate conditions are met.
 
@@ -21,7 +30,7 @@ for (let i = 0; i < 10000; i += 1) {
 throque to the rescue:
 
 ```
-const throque = require('./throque');
+const throque = require('throque');
 const readFileThroqued = throque(fs.readFile, 200, false);
 
 for (let i = 0; i < 10000; i += 1) {
