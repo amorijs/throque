@@ -55,12 +55,9 @@ throque currently exports a single function which is relatively simple to use.
   - The returned throttled function will be a promisified version of ``functionToThrottle``.
   - ``functionToThrottle`` **must** follow the [Node.js error-first callback pattern](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/), or the internal promisification will fail. Even though Node native library methods should all work perfectly fine this way, it is recomended to not set this value to false (which means your ``functiontoThrottle`` returns a promise.) 
   - If your ``functionToThrottle`` only passes a single argument to its' callback, your promisified function will resolve with this value, otherwise it will resolve with an array of values in the same order that would of been passed into the callback. You can use [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to mimic the callback signature.
-  
+
+
  ## Plans for the future
- 
- ### Port to typescript
- 
- throque will be ported to typescript in the near future
  
  ### Tests
  
