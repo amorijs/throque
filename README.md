@@ -8,7 +8,7 @@ Etymology: Throttle + Queue = throque
 
 ## Installation and usage
 
-`yarn install` or `npm install`
+`yarn install throque` or `npm install throque`
 
 ```javascript
 const throque = require('throque');
