@@ -11,7 +11,7 @@ Etymology: Throttle + Queue = throque
 `yarn install` or `npm install`
 
 ```javascript
-const throque = require('./throque');
+const throque = require('throque');
 const writeFileThroqued = throque(fs.writeFile, 200, false);
 ```
 
